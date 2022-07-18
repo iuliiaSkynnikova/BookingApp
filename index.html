@@ -17,23 +17,26 @@
     <main>
         <div id="form">
             <form onsubmit=" return validFormFieldInput();"> 
+                <span class="error" id="tripKindError">Please select trip kind</span><br>
                 <input type="radio" id="oneWay" name="tripKind" value="oneWay">
                 <label for="oneWay">One Way</label>
                 <input type="radio" id="roundWay" name="tripKind" value="roundWay">
                 <label for="roundWay">Round trip </label><br>
-                <span class="error" id="tripKindError">Please select trip kind</span><br>
-
+                
+                <span class="error" id="destinationError">Please select dectination from ...to</span><br>
                 <label for="from">From:</label>
                 <input type="text" id="from" name="from" placeholder="Sydney">
                 <label for="to">To:</label>
                 <input type="text" id="to" name="to"><br>
-                <span class="error" id="destinationError">Please select dectination from ...to</span><br>
+                
 
-
+                <span class="error" id="dateDepError">Please select depature date </span><br>
+                <span class="error" id="dateRetError">Please select return date </span><br>
                 <label for="dateDep">Depature:</label>
                 <input type="date" id="dateDep" name="dateDep">
                 <label for="dateRet">Return date:</label>
                 <input type="date" id="dateRet" name="dateRet">
+                <span class="error" id="dateError">Please select dates</span><br>
         
                 <p>Number of Passangers</p>
                 <label for="numberAdult">Adult:</label>
@@ -72,9 +75,11 @@
                 </div>    
         
                 <h3>Contact infornation:</h3>
-                <label for="email">Enter your email:</label><br>
+                <label for="email">Enter your email:</label>
+                <span class="error" id="emailError">Please input email</span><br>
                 <input type="email" id="email" name="email" class="select"><br>
-                <label for="phone">Enter your phone number:</label><br>
+                <label for="phone">Enter your phone number:</label>
+                <span class="error" id="phoneError">Please input phone number</span><br>
                 <input type="tel" id="phone" name="phone" class="select"><br>
                 <label for="address">Enter your address:</label><br>
                 <input type="text" id="address" name="address" class="select"><br> 
